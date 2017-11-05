@@ -3,6 +3,8 @@ const AddWine = require('./views/AddWine')
 const WineDetails = require('./views/WineDetails')
 const WineList = require('./views/WineList')
 const Layout = require('./views/Layout')
+require('bootstrap/dist/css/bootstrap.css')
+require('./app.css')
 
 m.route(document.body, '/wines', {
   '/wines': {

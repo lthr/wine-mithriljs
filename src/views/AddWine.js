@@ -3,7 +3,7 @@ const m = require('mithril')
 module.exports = {
   view() {
     return (
-      <div className="row">
+      <div>
         Add wine
       </div>
     )

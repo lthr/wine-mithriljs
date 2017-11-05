@@ -4,15 +4,20 @@ module.exports = {
   view(vnode) {
     return (
       <div>
-        <nav>
-          <a href="/wines"
-            oncreate={m.route.link}>Wines</a>
-          <a href="/add"
-            oncreate={m.route.link}>Add</a>
+        <nav className="fixed-top">
+          <ul className="nav nav-pills nav-fill">
+            <li className="nav-item">
+              <a className="nav-link" oncreate={m.route.link} href="/wines">Wines</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" oncreate={m.route.link} href="/add">Add</a>
+            </li>
+          </ul>
         </nav>
-        <section>
+
+        <div className="container-fluid">
           {vnode.children}
-        </section>
+        </div>
       </div>
     )
   }
